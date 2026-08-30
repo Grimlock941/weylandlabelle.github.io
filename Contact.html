@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact - Weyland LaBelle</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Contact Information for Weyland LaBelle">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: lightblue;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            background: white;
+            padding: 20px 40px;
+        }
+        header, nav, section {
+            margin-bottom: 30px;
+        }
+        nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #0056a3;
+            font-weight: bold;
+        }
+        h1, h2 {
+            color: #003366;
+        }
+        .section-title {
+            border-bottom: 2px solid #003366;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            display: block;
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #0056a3;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: #003d7a;
+        }
+        </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Contact Me</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="resume.html">Resume</a>
+            <a href="Portfolio.html">Portfolio</a>
+            <a href="Newsletter.html">Newsletter</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+
+        <p>
+            Thanks for visiting my website! If you have any questions,
+            inquiries, or would like to get in touch with me, please feel
+            free to reach out via email at <strong>w.labelle@icloud.com</strong>
+        </p>
+
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="email">Email:</label>
+            <input type="email" placeholder="your.email@example.com" id="email" name="email"> 
+
+            <label for="message">Message:</label>
+            <textarea rows="6" placeholder="Your message here..." id="message" name="message"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <footer>
+            <p>&copy; 2026 Weyland LaBelle. All rights reserved.</p>
+        </footer>
+
+    </div>
+</body>
+</html>
