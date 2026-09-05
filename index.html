@@ -4,48 +4,161 @@
     <title>Professional Website</title>
     <meta name="AUTHOR" content="Weyland LaBelle">
     <meta name="description" content="First Webpage">
+     <!-- meta won't show up anywhere on the page, but it is important for search engines to know what
+         your page is about -->
+         <!-- style sheet starts here and ends below (will tag )-->
     <style>
-         body {
+        body {
+            width: 1200px;
+            margin: 0 auto;
+            background-color: #101112;
+            background-image: url('images/techbg.webp');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            background-size: cover;
+            font-family: Arial, Helvetica, sans-serif;
             color: white;
         }
         a {
             color: white;
         }
-        
+        h1 {
+            margin: 0;
+        }
+        h2 {
+            margin: 0;
+        }
+        h3 {
+            text-decoration: underline;
+        }
+        img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+        }
+        p {
+            line-height: 1.5;
+            margin: 0;
+        }
+        header {
+            background: rgba(16, 17, 17, 0.35);
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin: 10px auto 20px auto;
+            max-width: 900px;
+            box-shadow: 0 0 12px rgba(0,0,0,0.15);
+            text-align: center;
+        }
+        main {
+            background: rgba(16, 17, 17, 0.35);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 900px;
+            box-shadow: 0 0 12px rgba(0,0,0,0.15);
+            text-align: center;
+        }
+        nav {
+            background-color: rgba(16, 17, 17, 0.5);
+            color: #FFCC66;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 8px;
+            max-width: 900px;
+            margin: 10px auto;
+            text-align: center;
+        }
+        hr {
+            border: 1px solid rgba(255,255,255,0.8);
+            background: rgba(255,255,255,0.08);
+            height: 2px;
+            border-radius: 999px;
+            margin: 18px auto;
+            width: 90%;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        footer {
+            text-align: center;
+        }
+        aside {
+            background: rgba(16, 17, 17, 0.35);
+            border-radius: 12px;
+            padding: 15px 20px;
+            margin: 20px auto;
+            max-width: 900px;
+            box-shadow: 0 0 12px rgba(0,0,0,0.15);
+            text-align: center;
+        }
+        nav a {
+            margin: 0 12px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* IDs are defined below */
+        #wrapper {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        #social {
+            color: #FFF;
+            font-weight: bold;
+            text-align: center;
+            margin: 20px auto;
+        }
+
+        /* Classes are defined below */
+        .banner {
+            background: rgba(16, 17, 17, 0.35);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 10px auto 20px auto;
+            max-width: 900px;
+            box-shadow: 0 0 12px rgba(0,0,0,0.15);
+            text-align: center;
+        }
+        .intro {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            font-style: italic;
+            display: inline-block;
+            margin-bottom: 6px;
+            line-height: 1.2;
+        }
     </style>
-    <!-- meta won't show up anywhere on the page, but it is important for search engines to know what
-         your page is about -->
+    <!-- end style sheet -->
 </head>
 
-<body style="
-    background:url('images/techbg.webp') no-repeat center center fixed;
-    background-size:cover;
-    background-attachment:fixed;
-    font-family:Arial, Helvetica, sans-serif;
-    text-align:center;
-    color:white;">
-    
+<body>
+    <div id="wrapper">
+
     <!-- Max-width container to center the page and improve readability -->
-    <div style="background:#161718; color:white; padding:20px; border-radius:10px; margin: 10px 0 20px 0;">
-    <h1 style="margin:0;">Welcome to My Professional Website</h1>
-    <p style="margin:0;">Developer • Designer • CDL Professional</p>
-</div>
+    <div class="banner">
+    <h1>Welcome to My Professional Website</h1>
+    <p>Developer • Designer • CDL Professional</p>
+</div> <!-- close banner -->
         <header>
-            <img src="images/weylandwrappedup.png" alt="Weyland LaBelle"
-                 style="width:200px; height:auto; border-radius:10px;">
-            <h1><b>Introducing W.LaBelle</b></h1>
+            <img src="images/weylandwrappedup.png" alt="Weyland LaBelle">
+            <h2><b>Introducing W.LaBelle</b></h2>
         </header>
-            <hr style="border:1px solid rgba(255,255,255,0.8); background: rgba(255,255,255,0.08); height: 2px; 
-            border-radius: 999px; margin: 18px auto; width: 90%;">
+            <hr>
         <nav>
-            <!-- Navigation links can be added here later -->
+            <a href="index.html">Home</a>
+            <a href="resume.html">Resume</a>
+            <a href="Portfolio.html">Portfolio</a>
+            <a href="Newsletter.html">Newsletter</a>
+            <a href="Contact.html">Contact</a>
         </nav>
 
-        <main style="background: rgba(16, 17, 17, 0.35); border-radius: 12px; padding: 20px; margin: 20px auto; 
-        max-width: 900px; box-shadow: 0 0 12px rgba(0,0,0,0.15);">
-            <p style="line-height: 1.5; margin: 0;">
-                <i style="color:white; font-size:24px; font-weight:bold; display:inline-block; margin-bottom: 6px; 
-                line-height: 1.2;">Welcome!</i><br>
+        <main>
+            <p>
+                <span class="intro">Welcome!</span><br>
                 It's so nice to have you here today. I am Weyland LaBelle and this
                 is a little bit about me. I am excited to share my journey with you.
             </p>
@@ -68,24 +181,15 @@
         </main>
 
      <aside>
-        <h3 style="text-decoration: underline;">Quick Links</h3>
-            <ul style="list-style-type:none; padding-left:0;">
-                 <li><a href="index.html">Home</a></li>
-                 <li><a href="resume.html">Resume</a></li>
-                 <li><a href="Portfolio.html">Portfolio</a></li>
-                 <li><a href="Newsletter.html">Newsletter</a></li>
-                 <li><a href="Contact.html">Contact</a></li>
-
-                 <li><a href="#story">Go to My Story</a></li>
-
-            </ul>
+        <a href="#story">Go to My Story</a>
         </aside>
+
+        <div id="social">Facebook | Twitter | YouTube</div> <!-- close social -->
 
         <footer>
             <p>&copy; 2024 Weyland LaBelle. All rights reserved.</p>
         </footer>
 
-    </div> <!-- end max-width container -->
-
+    </div> <!-- close wrapper -->
 </body>
 </html>
