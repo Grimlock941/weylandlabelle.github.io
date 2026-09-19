@@ -5,95 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Contact Information for Weyland LaBelle">
-    <style>
-        body {
-            background: url('images/techbg.webp') no-repeat center center fixed;
-            background-size: cover;
-            background-attachment: fixed;
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 0;
-            padding: 30px 20px;
-            line-height: 1.6;
-            color: white;
-        }
-        .container {
-            max-width: 1000px;
-            margin: auto;
-            background: rgba(16, 17, 17, 0.45);
-            padding: 20px 40px;
-            border-radius: 12px;
-            box-shadow: 0 0 12px rgba(0,0,0,0.15);
-        }
-        header, nav, section {
-            margin-bottom: 30px;
-        }
-        nav a {
-            margin-right: 15px;
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-        }
-        h1, h2, p, label {
-            color: white;
-        }
-        .section-title {
-            border-bottom: 2px solid rgba(255,255,255,0.8);
-            padding-bottom: 5px;
-            margin-bottom: 15px;
-        }
-        label {
-            display: block;
-            margin-top: 15px;
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
-        input[type="text"],
-        input[type="email"],
-        textarea {
-            display: block;
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 15px;
-            border: 1px solid rgba(255,255,255,0.4);
-            border-radius: 4px;
-            box-sizing: border-box;
-            background: rgba(255,255,255,0.08);
-            color: white;
-        }
-        button {
-            background-color: #003366;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-weight: bold;
-        }
-        button:hover {
-            background-color: #0056a3;
-        }
-        </style>
+    <link rel="stylesheet" href="weylandlabelle.css">
 </head>
 
 <body>
-    <div class="container">
-        <img src="images/KeyboardContact.jpeg" alt="Weyland LaBelle" 
-                 style="width: 400px; height:auto; border-radius:10px; display:block; margin:auto;">
+<div id="wrapper">
 
+    <div class="banner">
         <h1>Contact Me</h1>
+        <p>Reach Out • Connect • Collaborate</p>
+    </div>
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="resume.html">Resume</a>
-            <a href="Portfolio.html">Portfolio</a>
-            <a href="Newsletter.html">Newsletter</a>
-            <a href="Contact.html">Contact</a>
-        </nav>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="resume.html">Resume</a>
+        <a href="Portfolio.html">Portfolio</a>
+        <a href="Newsletter.html">Newsletter</a>
+        <a href="Contact.html">Contact</a>
+    </nav>
 
+    <header>
+        <img src="images/KeyboardContact.jpeg" alt="Keyboard Contact" class="medium-photo">
+    </header>
+
+    <main>
         <p>
-            Thanks for visiting my website! If you have any questions,
-            inquiries, or would like to get in touch with me, please feel
-            free to reach out via email at <strong>w.labelle@icloud.com</strong>
+            Thanks for visiting my website! If you have any questions or inquiries, feel free to reach 
+            out via email at <strong>w.labelle@icloud.com</strong>.
         </p>
 
         <form>
@@ -101,18 +39,19 @@
             <input type="text" id="name" name="name">
 
             <label for="email">Email:</label>
-            <input type="email" placeholder="your.email@example.com" id="email" name="email"> 
+            <input type="email" id="email" name="email" placeholder="your.email@example.com">
 
             <label for="message">Message:</label>
-            <textarea rows="6" placeholder="Your message here..." id="message" name="message"></textarea>
+            <textarea id="message" name="message" rows="6" placeholder="Your message here..."></textarea>
 
             <button type="submit">Submit</button>
         </form>
+    </main>
 
-        <footer>
-            <p>&copy; 2026 Weyland LaBelle. All rights reserved.</p>
-        </footer>
+    <footer>
+        <p>&copy; 2026 Weyland LaBelle. All rights reserved.</p>
+    </footer>
 
-    </div>
+</div> <!-- close wrapper -->
 </body>
 </html>
