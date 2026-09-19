@@ -1,198 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Professional Website</title>
-    <!-- Meta tags require a viewport to adjust to any device  -->
+    <title>Home - Weyland LaBelle</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="AUTHOR" content="Weyland LaBelle">
-    <meta name="description" content="First Webpage">
-     <!-- meta won't show up anywhere on the page, but it is important for search engines to know what
-         your page is about -->
-         <!-- style sheet starts here and ends below (will tag )-->
-    <style>
-        body {
-            width: 1200px;
-            margin: 0 auto;
-            background-color: #101112;
-            background-image: url('images/techbg.webp');
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-attachment: fixed;
-            background-size: cover;
-            font-family: Arial, Helvetica, sans-serif;
-            color: white;
-        }
-        a {
-            color: white;
-        }
-        h1 {
-            margin: 0;
-        }
-        h2 {
-            margin: 0;
-        }
-        h3 {
-            text-decoration: underline;
-        }
-        img {
-            width: 200px;
-            height: auto;
-            border-radius: 10px;
-        }
-        p {
-            line-height: 1.5;
-            margin: 0;
-        }
-        header {
-            background: rgba(16, 17, 17, 0.35);
-            color: white;
-            padding: 20px;
-            border-radius: 12px;
-            margin: 10px auto 20px auto;
-            max-width: 900px;
-            box-shadow: 0 0 12px rgba(0,0,0,0.15);
-            text-align: center;
-        }
-        main {
-            background: rgba(16, 17, 17, 0.35);
-            border-radius: 12px;
-            padding: 20px;
-            margin: 20px auto;
-            max-width: 900px;
-            box-shadow: 0 0 12px rgba(0,0,0,0.15);
-            text-align: center;
-        }
-        nav {
-            background-color: rgba(16, 17, 17, 0.5);
-            color: #FFCC66;
-            font-size: 18px;
-            padding: 10px 20px;
-            border-radius: 8px;
-            max-width: 900px;
-            margin: 10px auto;
-            text-align: center;
-        }
-        hr {
-            border: 1px solid rgba(255,255,255,0.8);
-            background: rgba(255,255,255,0.08);
-            height: 2px;
-            border-radius: 999px;
-            margin: 18px auto;
-            width: 90%;
-        }
-        ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-        footer {
-            text-align: center;
-        }
-        aside {
-            background: rgba(16, 17, 17, 0.35);
-            border-radius: 12px;
-            padding: 15px 20px;
-            margin: 20px auto;
-            max-width: 900px;
-            box-shadow: 0 0 12px rgba(0,0,0,0.15);
-            text-align: center;
-        }
-        nav a {
-            margin: 0 12px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        /* IDs are defined below */
-        #wrapper {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-        #social {
-            color: #FFF;
-            font-weight: bold;
-            text-align: center;
-            margin: 20px auto;
-        }
-
-        /* Classes are defined below */
-        .banner {
-            background: rgba(16, 17, 17, 0.35);
-            border-radius: 12px;
-            padding: 20px;
-            margin: 10px auto 20px auto;
-            max-width: 900px;
-            box-shadow: 0 0 12px rgba(0,0,0,0.15);
-            text-align: center;
-        }
-        .intro {
-            color: white;
-            font-size: 24px;
-            font-weight: bold;
-            font-style: italic;
-            display: inline-block;
-            margin-bottom: 6px;
-            line-height: 1.2;
-        }
-    </style>
-    <!-- end style sheet -->
+    <meta name="description" content="Professional Website Home Page">
+    <link rel="stylesheet" href="weylandlabelle.css">
 </head>
 
 <body>
-    <div id="wrapper">
+<div id="wrapper">
 
-    <!-- Max-width container to center the page and improve readability -->
     <div class="banner">
-    <h1>Welcome to My Professional Website</h1>
-    <p>Developer • Designer • CDL Professional</p>
-</div> <!-- close banner -->
-        <header>
-            <img src="images/weylandwrappedup.png" alt="Weyland LaBelle">
-            <h2><b>Introducing W.LaBelle</b></h2>
-        </header>
-            <hr>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="resume.html">Resume</a>
-            <a href="Portfolio.html">Portfolio</a>
-            <a href="Newsletter.html">Newsletter</a>
-            <a href="Contact.html">Contact</a>
-        </nav>
+        <h1>Welcome to My Professional Website</h1>
+        <p>Developer • Designer • CDL Professional</p>
+    </div>
 
-        <main>
-            <p>
-                <span class="intro">Welcome!</span><br>
-                It's so nice to have you here today. I am Weyland LaBelle and this
-                is a little bit about me. I am excited to share my journey with you.
-            </p>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="resume.html">Resume</a>
+        <a href="Portfolio.html">Portfolio</a>
+        <a href="Newsletter.html">Newsletter</a>
+        <a href="Contact.html">Contact</a>
+    </nav>
 
-            <h3 id="story">My Story so far</h3>
+    <header>
+        <img src="images/weylandwrappedup.png" alt="Weyland LaBelle" class="page-photo">
+        <h2>Introducing W. LaBelle</h2>
+    </header>
 
-            <p>
-                I am currently a student at the <b><i><u><a href="https://www.scf.edu/" target="_blank">
-                State College of Florida</a></u></i></b> where I am majoring in Computer
-                Programming and I have developed a strong passion for coding as it plays into my own
-                personal hobbies. One of my favorite things to do is "World Building". There
-                is just something about taking a free space and utilizing it to create something
-                out of nothing. Computer building has been another hobby of mine and with that
-                being said it is a gateway to creating more. Learning everything from Python
-                to HTML and CSS tying in Java; you can create so many unique things. I plan
-                to continue learning more and more about the coding languages and see where
-                it can take me while I pair it up with my other hobbies. I am excited to see
-                what the future holds for me and I hope you enjoy my webpage!
-            </p>
-        </main>
+    <main>
+        <p class="intro">Welcome!</p>
 
-     <aside>
+        <p>
+            It's so nice to have you here today. I am Weyland LaBelle and this
+            is a little bit about me. I am excited to share my journey with you.
+        </p>
+
+        <h3 id="story">My Story So Far</h3>
+
+        <p>
+            I am currently a student at the 
+           <a href="https://www.scf.edu/" target="_blank">State College of Florida</a>
+            where I am majoring in Computer Programming. I have developed a strong passion 
+            for coding as it plays into my own personal hobbies.
+        </p>
+
+        <p>
+            One of my favorite things to do is "World Building". There is just something 
+            about taking a free space and utilizing it to create something out of nothing.
+            Computer building has been another hobby of mine and with that being said it 
+            is a gateway to creating more.
+        </p>
+
+        <p>
+            Learning everything from Python to HTML and CSS tying in Java; you can create 
+            so many unique things. I plan to continue learning more and more about the 
+            coding languages and see where it can take me while I pair it up with my other 
+            hobbies. I am excited to see what the future holds for me and I hope you enjoy 
+            my webpage!
+        </p>
+    </main>
+
+    <aside>
         <a href="#story">Go to My Story</a>
-        </aside>
+    </aside>
 
-        <div id="social">Facebook | Twitter | YouTube</div> <!-- close social -->
+    <footer>
+        <p>&copy; 2026 Weyland LaBelle. All rights reserved.</p>
+    </footer>
 
-        <footer>
-            <p>&copy; 2024 Weyland LaBelle. All rights reserved.</p>
-        </footer>
-
-    </div> <!-- close wrapper -->
+</div> <!-- close wrapper -->
 </body>
 </html>
