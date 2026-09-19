@@ -5,36 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio page for Weyland LaBelle">
-    <style>
-        body {
-            background: url('images/techbg.webp') no-repeat center center fixed;
-            background-size: cover;
-            background-attachment: fixed;
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 0;
-            padding: 30px 20px;
-            color: white;
-        }
-        .container {
-            max-width:1000px;
-            margin:auto;
-            background: rgba(16, 17, 17, 0.45);
-            padding:20px 40px;
-            border-radius: 12px;
-            box-shadow: 0 0 12px rgba(0,0,0,0.15);
-        }
-        nav a { margin-right:15px; text-decoration:none; color:white; font-weight:bold; }
-        h1, h2, p { color:white; }
-        .project { margin-bottom:25px; padding-bottom:15px; border-bottom:1px solid rgba(255,255,255,0.5); }
-    </style>
+    <link rel="stylesheet" href="weylandlabelle.css">
 </head>
 
 <body>
-<div class="container">
-    <img src="images/Personalcoding.jpg" alt="Weyland LaBelle" 
-                 style="width: 500px; height:auto; border-radius:10px;">   
+<div id="wrapper">
 
-    <h1>My Portfolio</h1>
+    <div class="banner">
+        <h1>My Portfolio</h1>
+        <p>Projects • Growth • Development</p>
+    </div>
 
     <nav>
         <a href="index.html">Home</a>
@@ -44,48 +24,50 @@
         <a href="Contact.html">Contact</a>
     </nav>
 
-    <p>
-        This portfolio represents the beginning of my journey as a programmer and developer. 
-        As I continue my studies at the State College of Florida, I am building projects that 
-        demonstrate my growing skills in HTML, CSS, Java, Python, and web development. Below 
-        are some early examples of my work, along with space for future projects as I continue 
-        to expand my technical abilities.
-    </p>
+    <header>
+        <img src="images/Personalcoding.jpg" alt="Coding Workstation" class="portfolio-photo">
+    </header>
 
-    <div class="project">
-        <h2>Project 1: Personal Website</h2>
-        <p>
-            This website is my first major project, built using HTML and CSS. It serves as a 
-            foundation for my future portfolio and demonstrates my ability to structure pages, 
-            create navigation systems, and write professional content. As I learn more, I plan 
-            to enhance this site with JavaScript, improved styling, and interactive features.
-        </p>
-    </div>
+    <main>
 
-    <div class="project">
-        <h2>Project 2: Coding Practice & Exercises</h2>
         <p>
-            Throughout my coursework, I complete various programming exercises in Python, Java, 
-            and web development. These projects help me strengthen my understanding of logic, 
-            problem-solving, and software structure. I will continue adding examples of my work 
-            as I complete more assignments and personal projects.
+            This portfolio represents the beginning of my journey as a programmer and developer. 
+            As I continue my studies at the State College of Florida, I am building projects that 
+            demonstrate my growing skills in HTML, CSS, Java, Python, and web development.
         </p>
-    </div>
 
-    <div class="project">
-        <h2>Future Projects</h2>
-        <p>
-            As my skills grow, I plan to build applications related to transportation logistics, 
-            business automation, and digital tools for 5 Star Towing LLC. These projects 
-            will combine my technical education with my real-world experience in commercial 
-            driving and business operations.
-        </p>
-    </div>
+        <div class="project">
+            <h2>Project 1: Personal Website</h2>
+            <p>
+                This website is my first major project, built using HTML and CSS. It serves as a 
+                foundation for my future portfolio and demonstrates my ability to structure pages, 
+                create navigation systems, and write professional content.
+            </p>
+        </div>
+
+        <div class="project">
+            <h2>Project 2: Coding Practice & Exercises</h2>
+            <p>
+                Throughout my coursework, I complete various programming exercises in Python, Java, 
+                and web development. These projects help me strengthen my understanding of logic, 
+                problem-solving, and software structure.
+            </p>
+        </div>
+
+        <div class="project">
+            <h2>Future Projects</h2>
+            <p>
+                As my skills grow, I plan to build applications related to transportation logistics, 
+                business automation, and digital tools for 5 Star Towing LLC.
+            </p>
+        </div>
+
+    </main>
 
     <footer>
         <p>&copy; 2026 Weyland LaBelle. All rights reserved.</p>
     </footer>
 
-</div>
+</div> <!-- close wrapper -->
 </body>
 </html>
