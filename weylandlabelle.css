@@ -1,0 +1,235 @@
+/* =========================================================
+   1. TAG SELECTORS (Existing HTML tags)
+   ========================================================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background: url('images/techbg.webp') no-repeat center center fixed;
+    background-size: cover;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px 18px;
+}
+
+main {
+    padding: 10px 0;
+}
+
+footer {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    color: #dfeeff;
+}
+
+/* =========================================================
+   2. ID SELECTORS (Used once per page)
+   ========================================================= */
+
+#wrapper {
+    width: min(90%, 1100px);
+    margin: 0 auto;
+    padding: 20px 20px 40px;
+    background: rgba(10, 18, 30, 0.75);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    text-align: left;
+}
+
+#story {
+    color: #9ad7ff;
+    margin-top: 30px;
+}
+
+/* =========================================================
+   3. CLASS SELECTORS (Reusable styles)
+   ========================================================= */
+
+/* Banner */
+.banner {
+    text-align: center;
+    padding: 30px 20px 10px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.banner h1 {
+    margin: 0;
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.banner p {
+    margin: 10px 0 0;
+    font-size: 1.1rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #9ad7ff;
+}
+
+/* Navigation selected page */
+.selected {
+    color: #c0c0c0;
+}
+
+/* Images */
+.page-photo {
+    width: 450px;
+    max-width: 90%;
+    border-radius: 10px;
+}
+
+.resume-photo {
+    width: 260px;
+    max-width: 70%;
+    border-radius: 12px;
+    border: 3px solid rgba(255,255,255,0.3);
+    box-shadow: 0 8px 22px rgba(0,0,0,0.35);
+}
+
+.portfolio-photo {
+    width: 700px;
+    max-width: 95%;
+    border-radius: 10px;
+}
+
+.medium-photo {
+    width: 600px;
+    max-width: 95%;
+    border-radius: 10px;
+}
+
+/* Resume name */
+.resume-name {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    color: #dff7ff;
+}
+
+/* Resume address */
+.resume-address {
+    text-align: center;
+    font-style: normal;
+    margin-bottom: 20px;
+    color: #edf6ff;
+}
+
+.resume-address a {
+    color: #9ad7ff;
+    text-decoration: none;
+}
+
+/* Intro text */
+.intro {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #7ee0ff;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+/* Resume columns */
+.resume-columns {
+    display: flex;
+    gap: 20px;
+}
+
+.resume-left {
+    width: 30%;
+    padding: 15px;
+    border-right: 2px solid rgba(255,255,255,0.2);
+}
+
+.resume-right {
+    width: 70%;
+    padding: 15px;
+}
+
+/* Resume section titles */
+.section-title {
+    color: #9ad7ff;
+    margin-bottom: 12px;
+    font-size: 1.7rem;
+}
+
+/* Portfolio projects */
+.project {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+/* Forms */
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(255,255,255,0.4);
+    border-radius: 4px;
+    background: rgba(255,255,255,0.08);
+    color: white;
+}
+
+button {
+    background-color: #003366;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Abbreviation styling */
+abbr {
+    border-bottom: 1px dotted #9ad7ff;
+    cursor: help;
+    color: #9ad7ff;
+}
+
+/* =========================================================
+   4. PSEUDO-CLASSES & PSEUDO-ELEMENTS
+   ========================================================= */
+
+nav a:hover {
+    color: #66d0ff;
+}
+
+nav a:visited {
+    color: #88ccee;
+}
+
+.resume-address a:hover {
+    color: #c2e9ff;
+}
+
+h1::before {
+    content: "";
+}
