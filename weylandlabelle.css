@@ -1,6 +1,10 @@
 /* =========================================================
-   1. TAG SELECTORS (Existing HTML tags)
+   GLOBAL RESET & BASE
    ========================================================= */
+
+* {
+    box-sizing: border-box;
+}
 
 html {
     scroll-behavior: smooth;
@@ -16,13 +20,25 @@ body {
     line-height: 1.6;
 }
 
+/* =========================================================
+   WRAPPER & STRUCTURE
+   ========================================================= */
+
+#wrapper {
+    width: min(90%, 1100px);
+    margin: 0 auto;
+    padding: 20px 20px 40px;
+    background: rgba(10, 18, 30, 0.75);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
 header {
     text-align: center;
     margin-bottom: 20px;
 }
 
 main {
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
 footer {
@@ -33,34 +49,15 @@ footer {
 }
 
 /* =========================================================
-   2. ID SELECTORS (Used once per page)
+   BANNER / MASTHEAD
    ========================================================= */
 
-#wrapper {
-    width: min(90%, 1100px);
-    margin: 0 auto;
-    padding: 20px 20px 40px;
-    background: rgba(10, 18, 30, 0.75);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-    text-align: left;
-}
-
-#story {
-    color: #9ad7ff;
-    margin-top: 30px;
-}
-
-/* =========================================================
-   3. CLASS SELECTORS (Reusable styles)
-   ========================================================= */
-
-/* ---------- Banner ---------- */
 .banner {
     text-align: center;
     padding: 30px 20px 10px;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.25);
     border-radius: 12px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .banner h1 {
@@ -76,14 +73,15 @@ footer {
     color: #9ad7ff;
 }
 
-/* ---------- Improved Navigation ---------- */
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
 
 nav {
     margin: 20px 0;
     text-align: center;
 }
 
-/* Mobile-first vertical nav */
 nav a {
     display: block;
     padding: 12px 18px;
@@ -97,14 +95,12 @@ nav a {
     transition: all 0.25s ease;
 }
 
-/* Hover effect */
 nav a:hover {
     color: #ffffff;
     background: rgba(0, 153, 255, 0.35);
     box-shadow: 0 0 12px rgba(0,153,255,0.45);
 }
 
-/* Selected page */
 .selected {
     color: #ffffff;
     background: rgba(0,153,255,0.55);
@@ -113,43 +109,84 @@ nav a:hover {
     padding: 12px 18px;
 }
 
-/* Desktop horizontal nav */
-@media only screen and (min-width: 640px) {
+@media (min-width: 640px) {
     nav a {
         display: inline-block;
         margin: 0 10px;
     }
 }
 
-/* ---------- Images ---------- */
+/* =========================================================
+   IMAGE STYLES
+   ========================================================= */
 
-.page-photo {
-    width: 450px;
-    max-width: 90%;
+.page-photo,
+.resume-photo,
+.portfolio-photo,
+.medium-photo {
+    width: 100%;
+    max-width: 700px;
     border-radius: 10px;
+    display: block;
+    margin: 0 auto;
 }
 
 .resume-photo {
-    width: 260px;
-    max-width: 70%;
-    border-radius: 12px;
+    max-width: 260px;
     border: 3px solid rgba(255,255,255,0.3);
     box-shadow: 0 8px 22px rgba(0,0,0,0.35);
 }
 
-.portfolio-photo {
-    width: 700px;
-    max-width: 95%;
-    border-radius: 10px;
+/* =========================================================
+   PORTFOLIO GRID (NEW)
+   ========================================================= */
+
+.portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 30px;
 }
 
-.medium-photo {
-    width: 600px;
-    max-width: 95%;
+.portfolio-item {
+    flex: 1 1 48%; /* two columns on desktop */
+    background: rgba(255,255,255,0.05);
+    padding: 15px;
     border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.3);
 }
 
-/* ---------- Resume Formatting ---------- */
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;   /* ⭐ Add this */
+    object-fit: cover;   /* ⭐ And this */
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+
+.portfolio-item h2 {
+    margin-top: 0;
+    color: #9ad7ff;
+    font-size: 1.4rem;
+}
+
+.portfolio-item p {
+    margin-bottom: 0;
+    color: #dfeeff;
+}
+
+/* One column on mobile */
+@media (max-width: 768px) {
+    .portfolio-item {
+        flex: 1 1 100%;
+    }
+}
+
+/* =========================================================
+   RESUME PAGE
+   ========================================================= */
 
 .resume-name {
     text-align: center;
@@ -160,7 +197,6 @@ nav a:hover {
 
 .resume-address {
     text-align: center;
-    font-style: normal;
     margin-bottom: 20px;
     color: #edf6ff;
 }
@@ -175,7 +211,6 @@ nav a:hover {
     font-weight: bold;
     color: #7ee0ff;
     margin-bottom: 8px;
-    text-align: left;
 }
 
 .resume-columns {
@@ -200,15 +235,9 @@ nav a:hover {
     font-size: 1.7rem;
 }
 
-/* ---------- Portfolio Projects ---------- */
-
-.project {
-    margin-bottom: 25px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid rgba(255,255,255,0.2);
-}
-
-/* ---------- Forms ---------- */
+/* =========================================================
+   FORMS
+   ========================================================= */
 
 label {
     display: block;
@@ -239,7 +268,9 @@ button {
     font-weight: bold;
 }
 
-/* ---------- Abbreviation ---------- */
+/* =========================================================
+   MISC
+   ========================================================= */
 
 abbr {
     border-bottom: 1px dotted #9ad7ff;
@@ -247,17 +278,11 @@ abbr {
     color: #9ad7ff;
 }
 
-/* ---------- Special Characters ---------- */
-
 .special-chars {
     color: purple;
     font-weight: bold;
     font-size: 1.3em;
 }
-
-/* =========================================================
-   4. PSEUDO-CLASSES & PSEUDO-ELEMENTS
-   ========================================================= */
 
 nav a:visited {
     color: #c8dfff;
