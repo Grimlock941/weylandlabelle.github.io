@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Portfolio - Weyland LaBelle</title>
     <meta charset="UTF-8">
+    <title>Portfolio - Weyland LaBelle</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio page for Weyland LaBelle">
+    <!-- ⭐ Correct stylesheet link -->
     <link rel="stylesheet" href="weylandlabelle.css">
 </head>
 
@@ -25,49 +26,64 @@
     </nav>
 
     <header>
-        <img src="images/Personalcoding.jpg" alt="Coding Workstation" class="portfolio-photo">
+        <img src="images/myworkstation.png" alt="Coding Workstation" class="portfolio-photo">
     </header>
 
-    <main>
+<main>
 
-        <p>
-            This portfolio represents the beginning of my journey as a programmer and developer. 
-            As I continue my studies at the State College of Florida, I am building projects that 
-            demonstrate my growing skills in HTML, CSS, Java, Python, and web development.
-        </p>
+    <p>
+        This portfolio represents the beginning of my journey as a programmer and developer. 
+        As I continue my studies at the State College of Florida, I am building projects that 
+        demonstrate my growing skills in HTML, CSS, Java, Python, and web development.
+    </p>
 
-        <div class="project">
+    <!-- ⭐ START OF RESPONSIVE GRID ⭐ -->
+    <section class="portfolio-grid">
+
+        <div class="portfolio-item">
             <h2>Project 1: Personal Website</h2>
             <p>
                 This website is my first major project, built using HTML and CSS. It serves as a 
-                foundation for my future portfolio and demonstrates my ability to structure pages, 
+                foundation for my future portfolio and demonstrates my ability to structure pages,
                 create navigation systems, and write professional content.
             </p>
         </div>
 
-        <div class="project">
+        <div class="portfolio-item">
             <h2>Project 2: Coding Practice & Exercises</h2>
-            <p>
-                Throughout my coursework, I complete various programming exercises in Python, Java, 
-                and web development. These projects help me strengthen my understanding of logic, 
-                problem-solving, and software structure.
-            </p>
+            <p>Java, Python, and HTML/CSS exercises.</p>
+            <img src="images/coding practice.png" alt="Coding Screenshot">           
         </div>
 
-        <div class="project">
-            <h2>Future Projects</h2>
-            <p>
-                As my skills grow, I plan to build applications related to transportation logistics, 
-                business automation, and digital tools for 5 Star Towing LLC.
-            </p>
+        <div class="portfolio-item">
+            <h2>Heavy Tow Truck operation</h2>
+            <p>Professional towing and logistics experience.</p>
+            <img src="images/rotator work.jpg" alt="Towing Work">
+         </div>
+
+        <div class="portfolio-item">
+            <h2>PC building</h2>
+            <p>Professional PC building and customization experience.</p>
+            <img src="images/pc build with 3d printed ball.jpeg" alt="PC Build">
         </div>
 
-    </main>
+        <div class="portfolio-item">
+            <h2>Graphic Design</h2>
+            <p>Professional graphic design experience.</p>
+            <img src="images/castle ent group image.jpeg" alt="Graphic Design">
+            <img src="images/flyz album.jpeg" alt="Graphic Design">
+                    </div>
 
-    <footer>
-        <p>&copy; 2026 Weyland LaBelle. All rights reserved.</p>
-    </footer>
+        <div class="portfolio-item">
+            <h2>3D Printing</h2>
+             <p>Professional 3D printing.</p>
+             <img src="images/3d printed charger.jpeg" alt="3D Printed Item">
+            <img src="images/orca keychains.jpeg" alt="3D Printed Item">
+            <img src="images/pokemon card stand.jpeg" alt="3D Printed Item">
+            <img src="images/silly axlotl.jpeg" alt="3D Printed Item">
+        </div>
 
-</div> <!-- close wrapper -->
-</body>
-</html>
+    </section>
+    <!-- ⭐ END OF RESPONSIVE GRID ⭐ -->
+
+</main>
