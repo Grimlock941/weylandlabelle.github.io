@@ -74,18 +74,29 @@ footer {
 }
 
 /* =========================================================
-   NAVIGATION
+   NAVIGATION (Clean, Symmetrical, Flexbox)
    ========================================================= */
 
 nav {
     margin: 20px 0;
-    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+nav li {
+    display: flex;
 }
 
 nav a {
-    display: block;
+    display: inline-block;
     padding: 12px 18px;
-    margin: 6px 0;
     color: #e8f4ff;
     background: rgba(255,255,255,0.06);
     border-radius: 8px;
@@ -106,14 +117,6 @@ nav a:hover {
     background: rgba(0,153,255,0.55);
     box-shadow: 0 0 14px rgba(0,153,255,0.55);
     border-radius: 8px;
-    padding: 12px 18px;
-}
-
-@media (min-width: 640px) {
-    nav a {
-        display: inline-block;
-        margin: 0 10px;
-    }
 }
 
 /* =========================================================
@@ -137,8 +140,16 @@ nav a:hover {
     box-shadow: 0 8px 22px rgba(0,0,0,0.35);
 }
 
+.photo-caption {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 8px;
+    font-style: italic;
+}
+
 /* =========================================================
-   PORTFOLIO GRID (NEW)
+   PORTFOLIO GRID
    ========================================================= */
 
 .portfolio-grid {
@@ -149,7 +160,7 @@ nav a:hover {
 }
 
 .portfolio-item {
-    flex: 1 1 48%; /* two columns on desktop */
+    flex: 1 1 48%;
     background: rgba(255,255,255,0.05);
     padding: 15px;
     border-radius: 10px;
@@ -159,12 +170,11 @@ nav a:hover {
 .portfolio-item img {
     width: 100%;
     height: auto;
-    max-height: 300px;   /* ⭐ Add this */
-    object-fit: cover;   /* ⭐ And this */
+    max-height: 300px;
+    object-fit: cover;
     border-radius: 8px;
     margin-bottom: 10px;
 }
-
 
 .portfolio-item h2 {
     margin-top: 0;
@@ -177,7 +187,6 @@ nav a:hover {
     color: #dfeeff;
 }
 
-/* One column on mobile */
 @media (max-width: 768px) {
     .portfolio-item {
         flex: 1 1 100%;
@@ -269,29 +278,69 @@ button {
 }
 
 /* =========================================================
-   MISC
+   BLOCKQUOTE
    ========================================================= */
 
-abbr {
-    border-bottom: 1px dotted #9ad7ff;
-    cursor: help;
-    color: #9ad7ff;
+blockquote {
+    text-align: justify;
+    margin: 20px;
+    font-style: italic;
 }
 
-.special-chars {
-    color: purple;
+blockquote:first-letter {
+    font-size: 1.8em;
     font-weight: bold;
-    font-size: 1.3em;
 }
 
-nav a:visited {
-    color: #c8dfff;
+/* =========================================================
+   BOX SECTION (Glass + Blue Glow)
+   ========================================================= */
+
+.box {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(0,153,255,0.35);
+    padding: 18px;
+    margin: 25px 0;
+    border-radius: 12px;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 0 18px rgba(0,153,255,0.35);
 }
 
-.resume-address a:hover {
-    color: #c2e9ff;
+/* =========================================================
+   INFOBAR (Glass + Blue Glow)
+   ========================================================= */
+
+.infobar {
+    background: rgba(255, 255, 255, 0.08);
+    color: #ffffff;
+    padding: 12px;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border-radius: 10px;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 0 16px rgba(0,153,255,0.45);
+    margin: 20px 0;
 }
 
-h1::before {
-    content: "";
+/* =========================================================
+   HR LINE
+   ========================================================= */
+
+.styled-line {
+    width: 80%;
+    border: 4px solid #036;
+    border-radius: 6px;
+}
+
+/* =========================================================
+   CSS3 FEATURES (Images)
+   ========================================================= */
+
+.medium-photo {
+    width: 60%;
+    display: block;
+    margin: auto;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
 }
