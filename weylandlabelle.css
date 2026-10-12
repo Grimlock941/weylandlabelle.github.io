@@ -278,18 +278,22 @@ button {
 }
 
 /* =========================================================
-   BLOCKQUOTE
+   BLOCKQUOTE (FIXED FIRST-LETTER ISSUE)
    ========================================================= */
 
 blockquote {
     text-align: justify;
     margin: 20px;
     font-style: italic;
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
+/* Prevent giant bold first letter */
 blockquote:first-letter {
-    font-size: 1.8em;
-    font-weight: bold;
+    font-size: 1.2em;
+    font-weight: normal;
+    font-style: normal;
 }
 
 /* =========================================================
