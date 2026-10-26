@@ -63,6 +63,9 @@ footer {
 .banner h1 {
     margin: 0;
     font-size: clamp(2rem, 4vw, 3rem);
+
+    /* CSS3 Feature #1 */
+    text-shadow: 0 0 12px #00aaff;
 }
 
 .banner p {
@@ -110,6 +113,9 @@ nav a:hover {
     color: #ffffff;
     background: rgba(0, 153, 255, 0.35);
     box-shadow: 0 0 12px rgba(0,153,255,0.45);
+
+    /* CSS3 Feature #2 */
+    transform: scale(1.08);
 }
 
 .selected {
