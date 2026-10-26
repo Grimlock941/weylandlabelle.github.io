@@ -14,42 +14,131 @@
     <div class="banner">
         <h1>Contact Me</h1>
         <p>Reach Out • Connect • Collaborate</p>
-    </div>
+    </div> <!-- close banner -->
 
     <nav>
     <ul>
         <li><a href="index.html">Home</a></li>
-<li><a href="resume.html">Resume</a></li>
-<li><a href="Portfolio.html">Portfolio</a></li>
-<li><a href="Newsletter.html">Newsletter</a></li>
-<li><a href="Contact.html"><span class="selected">Contact</span></a></li>
-
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="Portfolio.html">Portfolio</a></li>
+        <li><a href="Newsletter.html">Newsletter</a></li>
+        <li><a href="Contact.html"><span class="selected">Contact</span></a></li>
     </ul>
-</nav>
+</nav> <!-- close nav -->
 
     <header>
         <img src="images/KeyboardContact.jpeg" alt="Keyboard Contact" class="medium-photo">
     </header>
 
     <main>
-        <p>
-            Thanks for visiting my website! If you have any questions or inquiries, feel free to reach 
-            out via email at <strong>w.labelle@icloud.com</strong>.
+        <p class="contact-intro">
+            Thanks for visiting my website! If you have any questions or inquiries, feel free to reach out.
         </p>
 
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
+    <form action="#" method="post">
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="your.email@example.com">
+        <table class="contact-table">
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="6" placeholder="Your message here..."></textarea>
+            <tr>
+                <th colspan="2">Contact Me</th>
+            </tr>
 
-            <button type="submit">Submit</button>
-        </form>
-    </main>
+            <tr>
+                <td class="label">
+                    <span class="required">*</span> First Name
+                </td>
+                <td>
+                    <input type="text" name="firstname" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="label">
+                    <span class="required">*</span> Last Name
+                </td>
+                <td>
+                    <input type="text" name="lastname" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="label">City</td>
+                <td>
+                    <input type="text" name="city">
+                </td>
+            </tr>
+
+            <tr>
+                <td class="label">State</td>
+                <td>
+                    <select name="state">
+                        <option>Florida</option>
+                        <option>New Hampshire</option>
+                        <option>Georgia</option>
+                        <option>Texas</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="label">Zip Code</td>
+                <td>
+                    <input type="text" name="zip">
+                </td>
+            </tr>
+
+            <tr>
+                <td class="label">
+                    <span class="required">*</span> Email
+                </td>
+                <td>
+                    <input type="email" name="email" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="label">Gender</td>
+                <td>
+                    <input type="radio" name="gender" value="Male"> Male
+                    <input type="radio" name="gender" value="Female"> Female
+                </td>
+            </tr>
+
+            <tr>
+                <td class="label">Education</td>
+                <td>
+                    <input type="checkbox" name="education" value="AS"> AS
+                    <input type="checkbox" name="education" value="BS"> BS
+                </td>
+            </tr>
+
+            <tr>
+                <td class="label">Phone Number</td>
+                <td>
+                    <input type="tel" name="phone">
+                </td>
+            </tr>
+
+            <tr>
+                <td class="label">Comments</td>
+                <td>
+                    <textarea name="comments" rows="4" cols="35"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                    <input type="reset" value="Reset">
+                    <input type="submit" value="Submit">
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+</main>
+    
 
     <footer>
         <p>&copy; 2026 Weyland LaBelle. All rights reserved.</p>
