@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JavaScript - Weyland LaBelle</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="JavaScript routines for Weyland LaBelle's website">
+    <link rel="stylesheet" href="weylandlabelle.css">
+    
+</head>
+
+<body>
+<div id="wrapper">
+
+    <!-- Personalized banner / masthead (same as the rest of the site) -->
+    <div class="banner">
+        <h1>JavaScript Showcase</h1>
+        <!-- id="tagline" is rotated by the EXTERNAL script (Item #7) -->
+        <p id="tagline">Developer &bull; Designer &bull; CDL Professional</p>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="Portfolio.html">Portfolio</a></li>
+            <li><a href="Newsletter.html">Newsletter</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <p>Below are 8 different JavaScript routines I added to my site.</p>
+
+        <ol class="js-list">
+
+            <!-- ========== #1 ALERT ON MOUSEOVER ========== -->
+            <li>
+                <h2>Mouseover Alert</h2>
+                <p>Hover over the link to see a message about my CDL:</p>
+                <a href="#" class="hover-link"
+                   onmouseover="alert('I hold an unrestricted Class A CDL and have over a decade in towing and recovery!');"
+                   onclick="return false;">Hover Here: My CDL</a>
+            </li>
+
+            <!-- ========== #2 ALERT BUTTON ========== -->
+            <li>
+                <h2>Alert Button</h2>
+                <p>Click the button to learn what I'm building right now:</p>
+                <input type="button" class="js-btn" value="What Am I Building?"
+                       onclick="alert('I am developing a custom dispatch system for towing operations, plus 3D printing and PC build projects.');">
+            </li>
+
+            <!-- ========== #3 PROMPT ========== -->
+            <li>
+                <h2>Prompt Greeting</h2>
+                <script type="text/javascript">
+                    // Ask the visitor for their name, then write a personalized answer
+                    var visitor = prompt("Welcome to my site! Please enter your name:", "");
+                    if (visitor === null || visitor.trim() === "") {
+                        visitor = "Guest";   // fallback if they cancel or leave it blank
+                    }
+                    document.write("<p>Welcome, <strong>" + visitor + "</strong>! " +
+                        "Thanks for stopping by Weyland LaBelle's site. " +
+                        "Check out my Portfolio for towing, 3D printing and coding projects.</p>");
+                </script>
+            </li>
+
+            <!-- ========== #4 DOCUMENT.WRITE LAST UPDATE ========== -->
+            <li>
+                <h2>Last Update Message</h2>
+                <p>This page was last updated (written with <code>document.write</code>):</p>
+                <script type="text/javascript">
+                    // Reads the file's last-modified date and writes it in small text
+                    var update = new Date(document.lastModified);
+                    var month = update.getMonth() + 1;   // months start at 0, so add 1
+                    var day = update.getDate();
+                    var year = update.getFullYear();
+                    document.write("<span style='font-size:0.75em;'>Last Updated - " +
+                        month + "/" + day + "/" + year + "</span>");
+                </script>
+                <p class="small-print">The same script is also at the bottom of index.html and Portfolio.html.</p>
+            </li>
+
+            <!-- ========== #5 CALCULATION FORM ========== -->
+            <li>
+                <h2>Towing Cost Estimator</h2>
+                <p>Estimate a tow price. (Example rates for demonstration only.)</p>
+                <form class="calc-box" name="towCalc" onsubmit="return false;">
+                    <label for="vehicle">Vehicle type</label>
+                    <select id="vehicle">
+                        <option value="75">Car / Light Duty ($75 hook-up)</option>
+                        <option value="110">Truck / SUV ($110 hook-up)</option>
+                        <option value="300">Heavy Duty / Rotator ($300 hook-up)</option>
+                    </select>
+
+                    <label for="miles">Miles to tow</label>
+                    <input type="number" id="miles" min="0" value="10">
+
+                    <label for="rate">Rate per mile ($)</label>
+                    <input type="number" id="rate" min="0" step="0.25" value="4">
+
+                    <p>
+                        <input type="checkbox" id="afterHours">
+                        <label class="inline" for="afterHours">After-hours service (+$50)</label>
+                    </p>
+
+                    <input type="button" class="js-btn" value="Calculate" onclick="calcTow();">
+                    <input type="button" class="js-btn" value="Clear" onclick="clearTow();">
+                    <div id="calcResult"></div>
+                </form>
+            </li>
+
+            <!-- ========== #6 INTERNAL SPECIAL EFFECT ========== -->
+            <li>
+                <h2>3D Printing Slideshow (fade effect)</h2>
+                <div class="slideshow">
+                    <img id="slideImg" src="images/3d printed charger.jpg" alt="3D printed project">
+                    <p id="slideCaption">Custom 3D printed charging dock</p>
+                    <input type="button" class="js-btn" value="&laquo; Prev" onclick="changeSlide(-1);">
+                    <input type="button" class="js-btn" value="Next &raquo;" onclick="changeSlide(1);">
+                </div>
+            </li>
+
+            <!-- ========== #7 EXTERNAL JAVASCRIPT ========== -->
+            <li>
+                <h2>External JavaScript File</h2>
+                <p>Look at the banner at the top of this page. The subtitle rotates through
+                   different taglines every 3 seconds. That is done by a separate file,
+                   <code>scripts/taglines.js</code>, linked at the bottom of this page.</p>
+            </li>
+
+            <!-- ========== #8 POP-UP WINDOW ========== -->
+            <li>
+                <h2>JavaScript Pop-Up Window</h2>
+                <p>Opens a small window with a set size and position (not a new page):</p>
+                <a href="#" class="hover-link" onclick="openPopup(); return false;">Open My Pop-Up</a>
+            </li>
+
+        </ol>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Weyland LaBelle. All rights reserved.</p>
+        <!-- Item #4 also appears here in small text -->
+        <script type="text/javascript">
+            var upd = new Date(document.lastModified);
+            document.write("<span style='font-size:0.75em;'>Last Updated - " +
+                (upd.getMonth() + 1) + "/" + upd.getDate() + "/" + upd.getFullYear() + "</span>");
+        </script>
+    </footer>
+
+</div> <!-- close wrapper -->
+
+<script type="text/javascript">
+/* ---------- #5 Towing calculator ---------- */
+function calcTow() {
+    var hookup = parseFloat(document.getElementById("vehicle").value);
+    var miles = parseFloat(document.getElementById("miles").value);
+    var rate = parseFloat(document.getElementById("rate").value);
+    var result = document.getElementById("calcResult");
+
+    // Make sure the numbers are valid before calculating
+    if (isNaN(miles) || isNaN(rate) || miles < 0 || rate < 0) {
+        result.textContent = "Please enter valid, non-negative numbers.";
+        return;
+    }
+    var total = hookup + (miles * rate);
+    if (document.getElementById("afterHours").checked) {
+        total += 50;
+    }
+    result.textContent = "Estimated total: $" + total.toFixed(2);
+}
+
+function clearTow() {
+    document.getElementById("miles").value = 10;
+    document.getElementById("rate").value = 4;
+    document.getElementById("vehicle").selectedIndex = 0;
+    document.getElementById("afterHours").checked = false;
+    document.getElementById("calcResult").textContent = "";
+}
+
+/* ---------- #6 Fading slideshow (internal script) ----------
+   Source: Based on the common "image array + setInterval" slideshow
+   technique from w3schools.com / javascriptsource.com style examples.
+   https://www.w3schools.com/jsref/met_win_setinterval.asp
+   https://www.w3schools.com/jsref/met_win_settimeout.asp
+   https://www.w3schools.com/w3js/w3js_slideshow.asp
+   What it does: cycles through my 3D printing photos automatically
+   every 4 seconds with a fade, and Prev/Next buttons also work. */
+var slides = [
+    { src: "images/3d printed charger.jpg", caption: "Custom 3D printed charging dock" },
+    { src: "images/orca keychains.jpg",     caption: "Orca-themed 3D printed keychains" },
+    { src: "images/pokemon card stand.jpg", caption: "3D printed Pok\u00E9mon card display stand" },
+    { src: "images/silly axlotl.jpg",       caption: "Fun 3D printed axolotl figurine" }
+];
+var slideIndex = 0;
+var slideTimer = setInterval(function () { changeSlide(1); }, 4000);
+
+function changeSlide(step) {
+    var img = document.getElementById("slideImg");
+    var cap = document.getElementById("slideCaption");
+    img.style.opacity = 0;                       // fade out
+    setTimeout(function () {
+        slideIndex = (slideIndex + step + slides.length) % slides.length;
+        img.src = slides[slideIndex].src;
+        img.alt = slides[slideIndex].caption;
+        cap.textContent = slides[slideIndex].caption;
+        img.style.opacity = 1;                   // fade in
+    }, 600);
+}
+
+/* ---------- #8 Pop-up window ----------
+   Source: window.open() sample from the assignment sheet, rewritten
+   with my own size, position and message. */
+function openPopup() {
+    var win = window.open("", "weylandPopup",
+        "height=350,width=520,left=250,top=120,resizable=yes");
+    if (!win) {
+        alert("Your browser blocked the pop-up. Please allow pop-ups for this site.");
+        return;
+    }
+    win.document.write(
+        "<html><head><title>About Weyland</title></head>" +
+        "<body style='font-family:Arial;background:#0a121e;color:#fff;text-align:center;padding:20px;'>" +
+        "<h2 style='color:#9ad7ff;'>Thanks for visiting!</h2>" +
+        "<p>I'm Weyland LaBelle: CDL driver, student at State College of Florida, " +
+        "and builder of websites, PCs and 3D prints.</p>" +
+        "<p>Want to work together? Visit my Contact page.</p>" +
+        "<button onclick='window.close()'>Close Window</button>" +
+        "</body></html>");
+    win.document.close();
+}
+</script>
+
+<!-- #7 EXTERNAL JavaScript file -->
+<script type="text/javascript" src="scripts/taglines.js"></script>
+
+</body>
+</html>
