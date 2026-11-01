@@ -424,3 +424,90 @@ blockquote:first-letter {
     border-radius: 12px;
     box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
 }
+/* =========================================================
+   JAVASCRIPT PAGE (js.htm)
+   ========================================================= */
+
+ol.js-list > li {
+    margin-bottom: 40px;
+}
+
+ol.js-list h2 {
+    color: #9ad7ff;
+    margin: 0 0 8px;
+    font-size: 1.4rem;
+}
+
+.js-btn,
+.calc-box input[type="button"] {
+    background-color: #003366;
+    color: #fff;
+    padding: 10px 20px;
+    border: 1px solid rgba(0,153,255,0.5);
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.js-btn:hover {
+    background-color: #0066aa;
+}
+
+.hover-link {
+    color: #9ad7ff;
+    font-weight: bold;
+}
+
+.calc-box {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(0,153,255,0.35);
+    border-radius: 10px;
+    padding: 15px 20px;
+    max-width: 520px;
+}
+
+.calc-box select,
+.calc-box input[type="number"] {
+    padding: 6px;
+    background: #fff;
+    color: #000;
+    border: 1px solid #666;
+    width: 100%;
+}
+
+.calc-box label {
+    display: block;
+    margin-top: 12px;
+}
+
+.calc-box label.inline {
+    display: inline;
+    font-weight: normal;
+    margin-left: 4px;
+}
+
+#calcResult {
+    margin-top: 15px;
+    font-size: 1.1rem;
+    color: #7ee0ff;
+    font-weight: bold;
+}
+
+.slideshow {
+    text-align: center;
+    max-width: 520px;
+}
+
+#slideImg {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: opacity 0.6s;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.small-print {
+    font-size: 0.8rem;
+    color: #dfeeff;
+}
