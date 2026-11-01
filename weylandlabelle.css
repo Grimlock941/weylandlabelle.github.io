@@ -253,15 +253,18 @@ nav a:hover {
 /* =========================================================
    CONTACT FORM TABLE
    ========================================================= */
-   .contact-intro {
+
+.contact-intro {
     text-align: center;
     margin: 0 auto 25px auto;
     width: 75%;
     font-size: 1.1rem;
     color: #e8f4ff;
 }
+
 .contact-table {
-    width: 75%;
+    width: 65%;
+    max-width: 650px;
     margin: 20px auto;
     border: 4px solid #003399;
     border-collapse: collapse;
@@ -273,14 +276,14 @@ nav a:hover {
     background-color: #3f3f3e;
     color: #ffffff;
     text-align: center;
-    padding: 12px;
-    font-size: 1.8em;
+    padding: 8px;
+    font-size: 1.3em;
     font-weight: bold;
 }
 
 .contact-table td {
     border: 1px solid #003399;
-    padding: 10px;
+    padding: 4px 8px;
     color: white;
     background-color: #3f3f3e;
 }
@@ -303,15 +306,26 @@ nav a:hover {
 .contact-table select,
 .contact-table textarea {
     width: 90%;
-    padding: 6px;
+    padding: 4px;
+    margin-bottom: 0;
     background-color: white;
     color: black;
     border: 1px solid #666666;
 }
 
+/* Keep radio buttons and checkboxes on one line with their text */
 .contact-table input[type="radio"],
 .contact-table input[type="checkbox"] {
     width: auto;
+    display: inline-block;
+    margin: 0 4px 0 6px;
+    vertical-align: middle;
+}
+
+.contact-table label {
+    display: inline;
+    margin: 0 12px 0 0;
+    font-weight: normal;
 }
 
 .contact-table input[type="submit"],
@@ -319,7 +333,6 @@ nav a:hover {
     padding: 6px 12px;
     margin-right: 10px;
 }
-
 /* =========================================================
    FORMS
    ========================================================= */
