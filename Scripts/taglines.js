@@ -6,7 +6,7 @@
             technique from w3schools.com JS timing examples.
             (Edit this line to name the exact site/page you used.)
    Rewritten and customized with my own taglines and fade effect.
-   Used by: js.htm -> <script src="scripts/taglines.js"></script>
+   Used by: js.htm -> <script src="Scripts/taglines.js"></script>
    ========================================================== */
 
 // My own list of taglines (customized for my site)
